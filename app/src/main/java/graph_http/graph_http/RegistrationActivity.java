@@ -81,6 +81,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("Content-Type", "application/json");
+
                 conn.setReadTimeout(5000);
 
                 conn.setDoOutput(true);

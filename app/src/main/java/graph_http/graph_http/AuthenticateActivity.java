@@ -106,6 +106,9 @@ public class AuthenticateActivity extends AppCompatActivity {
                 toast.show();
 
 
+                editEmail.setText(authenticate.getString("jwtToken"));
+
+
             } catch (JSONException e) {
                 e.printStackTrace();
 

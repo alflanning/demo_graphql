@@ -46,4 +46,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), OvondoQueryActivity.class);
         startActivity(intent);
     }
+
+    public void onToUpdateLocationActivityClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), UpdateLocaionActivity.class);
+        startActivity(intent);
+    }
 }
