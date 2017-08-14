@@ -2,9 +2,11 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
 
     <ScrollView
+        android:id="@+id/idRegistrationScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
@@ -13,159 +15,169 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginRight="@dimen/element_margin_thirty"
+            android:layout_marginLeft="@dimen/element_margin_thirty">
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_text_before_registration"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:layout_marginTop="@dimen/element_margin_double"/>
+
+            <TextView
+                android:id="@+id/idErrorEmptyFieldsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Название фирмы"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"/>
+                android:text="@string/error_empty_fields"
+                android:gravity="center"
+                android:textColor="@color/colorError"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/idEditCompanyName"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
+                android:hint="@string/edit_company_name"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"
                 android:gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Телефон фирмы"
-                android:layout_marginBottom="5dp"/>
 
             <EditText
                 android:id="@+id/idEditCompanyPhone"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Веб-сайт"
-                android:layout_marginBottom="5dp"/>
+                android:hint="@string/edit_company_phone"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <EditText
                 android:id="@+id/idEditCompanyWebSite"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/edit_web_site"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <TextView
+                android:id="@+id/idErrorStateNameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Штат"
-                android:layout_marginBottom="5dp"/>
+                android:text="@string/error_state_name"
+                android:gravity="center"
+                android:textColor="@color/colorError"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/idEditState"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Город"
-                android:layout_marginBottom="5dp"/>
+                android:hint="@string/edit_state"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <EditText
                 android:id="@+id/idEditCity"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Имя пользователя"
-                android:layout_marginBottom="5dp"/>
+                android:hint="@string/edit_city"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <EditText
                 android:id="@+id/idEditUserName"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
+                android:hint="@string/edit_user_name"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Фамилия пользователя"
-                android:layout_marginBottom="5dp"/>
-
-            <EditText
+             <EditText
                 android:id="@+id/idEditUserSecondName"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
+                android:hint="@string/edit_last_user_name"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Телефон пользователя"
-                android:layout_marginBottom="5dp"/>
-
-            <EditText
+             <EditText
                 android:id="@+id/idEditUserPhone"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Адрес"
-                android:layout_marginBottom="5dp"/>
+                android:hint="@string/edit_user_phone"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <EditText
                 android:id="@+id/idEditAdress"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
+                android:hint="@string/edit_adress"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Электронная почта"
-                android:layout_marginBottom="5dp"/>
-
-            <EditText
+           <EditText
                 android:id="@+id/idEditEmail"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="15dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Пароль"
-                android:layout_marginBottom="5dp"/>
+                android:hint="@string/edit_email"
+                android:layout_marginBottom="@dimen/element_margin_double"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <EditText
                 android:id="@+id/idEditPassword"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginBottom="35dp"/>
+                android:hint="@string/edit_password"
+                android:layout_marginBottom="@dimen/element_margin_thirty"
+                android:paddingBottom="@dimen/element_margin_double"
+                android:paddingTop="@dimen/element_margin_double"
+                android:background="@drawable/shape_edit_text"/>
 
             <Button
                 android:id="@+id/idRegistrationButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Регистрация"
+                android:text="@string/registration"
                 android:onClick="onRegistrationUserClick"
-                android:layout_marginBottom="20dp"/>
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/element_margin_quadro"/>
 
 
 
@@ -173,6 +185,37 @@
 
 
     </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/idFrameRegistrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onFrameRegistrationLayoutClick"
+        android:background="@drawable/shadow_background"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_margin="@dimen/element_margin_thirty"
+            android:padding="@dimen/element_margin_triple">
+
+            <TextView
+                android:id="@+id/idAfterRegistrationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_after_registration"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
 
 
 

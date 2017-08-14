@@ -1,4 +1,4 @@
-package graph_http.graph_http;
+package graph_http.graph_http.ui;
 
 
 import android.os.AsyncTask;
@@ -17,6 +17,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import graph_http.graph_http.R;
 
 public class UpdateLocaionActivity extends AppCompatActivity {
 

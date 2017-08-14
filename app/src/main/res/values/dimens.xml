@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="element_margin">5dp</dimen>
+    <dimen name="element_margin_six">6dp</dimen>
+    <dimen name="element_margin_double">10dp</dimen>
+    <dimen name="element_margin_triple">15dp</dimen>
+    <dimen name="element_margin_quadro">20dp</dimen>
+    <dimen name="element_margin_thirty">30dp</dimen>
+
+    <dimen name="font_more_large">30sp</dimen>
+    <dimen name="font_large">22sp</dimen>
+    <dimen name="font_more_medium">20sp</dimen>
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_tiny">10sp</dimen>
+
+</resources>

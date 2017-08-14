@@ -4,41 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="graph_http.graph_http.MainActivity">
+    android:background="@color/mainBackground"
+    tools:context="graph_http.graph_http.ui.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/element_margin_thirty"
+        android:layout_marginLeft="@dimen/element_margin_thirty"
         android:layout_gravity="center"
         android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/idErrorEnterText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/element_margin_double"
+            android:text="@string/error_enter_text"
+            android:gravity="center"
+            android:textColor="@color/colorError"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/idEditEmailAdress"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/element_margin_double"
+            android:paddingBottom="@dimen/element_margin_double"
+            android:paddingTop="@dimen/element_margin_double"
+            android:hint="@string/edit_login"
+            android:background="@drawable/shape_edit_text"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/idEditPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/element_margin_double"
+            android:paddingBottom="@dimen/element_margin_double"
+            android:paddingTop="@dimen/element_margin_double"
+            android:background="@drawable/shape_edit_text"
+            android:hint="@string/edit_password"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/element_margin_double"
+            android:text="@string/enter"
+            android:textColor="@color/colorWhite"
+            android:onClick="onAuthenticateClick"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="onToRegistrationActivityClick"
-            android:text="регистрация нового пользователя"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="авторизация"
-            android:onClick="onToAuthenticateActivityClick"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="получение списка мест"
-            android:onClick="onToOvondoQueryActivityClick"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="добавление нового места"
-            android:onClick="onToUpdateLocationActivityClick"/>
+            android:textColor="@color/colorWhite"
+            android:text="@string/registration"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="@dimen/element_margin"/>
 
     </LinearLayout>
 

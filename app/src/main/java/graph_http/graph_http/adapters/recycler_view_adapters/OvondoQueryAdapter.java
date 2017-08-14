@@ -1,4 +1,4 @@
-package graph_http.graph_http.adapters;
+package graph_http.graph_http.adapters.recycler_view_adapters;
 
 
 import android.support.v7.widget.CardView;
@@ -34,10 +34,6 @@ public class OvondoQueryAdapter extends RecyclerView.Adapter<OvondoQueryAdapter.
     public OvondoQueryAdapter(JSONArray cards){
         this.cards = cards;
     }
-
-
-
-
 
     @Override
     public OvondoQueryAdapter.CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

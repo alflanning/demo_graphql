@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">graph_http</string>
+    <string name="app_name">Bambino</string>
+    <string name="enter">Вход</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="edit_login">Введите электронный адрес</string>
+    <string name="edit_password">Введите пароль</string>
+    <string name="error_enter_text">Неверный логин или пароль</string>
+    <string name="edit_company_name">Введите название фирмы</string>
+    <string name="edit_company_phone">Введите телефон фирмы</string>
+    <string name="edit_web_site">Введите название Веб-сайта</string>
+    <string name="edit_state">Введите штат</string>
+    <string name="error_state_name">Название штата должно состоять из двух символов</string>
+    <string name="edit_city">Введите город</string>
+    <string name="edit_user_name">Введите имя пользователя</string>
+    <string name="edit_last_user_name">Введите фамилию пользователя</string>
+    <string name="edit_user_phone">Введите телефон пользователя</string>
+    <string name="edit_adress">Введите адрес</string>
+    <string name="edit_email">Введите электронную почту</string>
+    <string name="info_text_before_registration">Для регистрации Вам обязательно необходимо заполнить все поля</string>
+    <string name="error_empty_fields">Одно или несколько полей остались незаполненными</string>
+    <string name="back_to_authenticate">Перейти обратно к Авторизации</string>
+    <string name="text_after_registration">Поздравляем! Вы успешно зарегистрированы в системе Bambino! Теперь Вам нужно авторизоваться под Вашим новым логином. Тапните на любую часть экрана для перехода к авторизации.</string>
 </resources>
